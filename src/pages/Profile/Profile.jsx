@@ -8,7 +8,7 @@ const Profile = () => {
     <>
       <Navbar />
       <div className="pt-28 px-16 bg-slate-50 h-screen w-full">
-        {currentUser.role === "Recruiter" ? (
+        {currentUser.role === "Mentor" ? (
           <RecruiterProfile />
         ) : (
           <ApplicantProfile />

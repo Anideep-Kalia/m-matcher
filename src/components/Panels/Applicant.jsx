@@ -120,7 +120,7 @@ const Applicant = () => {
     if (res.error) {
       toast.error(res.error);
     } else {
-      toast.success("Your job interests has been added 🥳");
+      toast.success("Your interests has been added 🥳");
     }
   };
 
@@ -206,7 +206,7 @@ const Applicant = () => {
             </ul>
           ) : (
             <p className="text-center font-medium text-xl">
-              Oops, No jobs available yet...
+              Oops, No Mentors available yet...
             </p>
           )}
         </div>
@@ -239,7 +239,7 @@ const Applicant = () => {
                         <Chip
                           sx={{
                             color: "white",
-                            backgroundColor: "#f43f5e",
+                            backgroundColor: "#007fff",
                             fontWeight: "600",
                           }}
                           key={value}

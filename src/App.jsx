@@ -67,7 +67,7 @@ function App() {
           exact
           path="/applications/:jobId"
           render={(props) =>
-            currentUser && currentUser.role === "Recruiter" ? (
+            currentUser && currentUser.role === "Mentor" ? (
               <Applications {...props} />
             ) : (
               <Redirect to="/signin" />

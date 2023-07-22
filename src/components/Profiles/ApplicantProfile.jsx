@@ -323,7 +323,7 @@ const ApplicantProfile = () => {
                         <Chip
                           sx={{
                             color: "white",
-                            backgroundColor: "#f43f5e",
+                            backgroundColor: "#007fff",
                             fontWeight: "600",
                           }}
                           key={value}

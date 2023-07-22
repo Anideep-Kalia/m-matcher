@@ -243,7 +243,7 @@ const JobCard = ({ job }) => {
         className="flex h-screen w-full items-center justify-center"
       >
         <Box className="p-6 rounded-md h-[85%] overflow-y-scroll bg-slate-50 w-[40%] border-none outline-none focus:outline-none ">
-          <h1 className="text-[2rem] text-center font-semibold">Update Job</h1>
+          <h1 className="text-[2rem] text-center font-semibold">Update Position</h1>
           <hr className="bg-slate-400 h-[2px] w-full mb-4" />
           <form
             className="w-full"
@@ -254,7 +254,7 @@ const JobCard = ({ job }) => {
                 htmlFor="job-title"
                 className="text-lg font-medium leading-[.1rem]"
               >
-                Job title
+                Location
               </label>
               <input
                 type="text"
@@ -266,20 +266,7 @@ const JobCard = ({ job }) => {
                 className="p-2 w-full border-[1px] text-lg rounded-md border-gray-200 focus:outline-secondary-300"
               />
             </div>
-            <div className="input-div mb-4">
-              <label htmlFor="designation" className="text-lg font-medium">
-                Job designation
-              </label>
-              <input
-                type="text"
-                autoComplete="off"
-                value={jobDesignation}
-                onChange={(e) => handleDetails(e)}
-                required
-                id="jobDesignation"
-                className="p-2 w-full font-normal border-[1px] text-lg rounded-md border-gray-200 focus:outline-secondary-300"
-              />
-            </div>
+            
             <div className="input-div mb-4">
               <label htmlFor="requirements" className="text-lg font-medium">
                 Job requirements
@@ -308,7 +295,7 @@ const JobCard = ({ job }) => {
                 </div>
                 <div>
                   <label htmlFor="salary" className="text-base block">
-                    Salary
+                    Age
                   </label>
                   <select
                     name="requirements"
@@ -318,13 +305,9 @@ const JobCard = ({ job }) => {
                     required
                     className="p-1 border-[1px] text-sm rounded-md border-gray-200 focus:outline-secondary-300"
                   >
-                    <option value="$ 1k - 1k">$ 1k - 1k</option>
-                    <option value="$ 2k - 5k">$ 2k - 5k</option>
-                    <option value="$ 3k - 7k">$ 3k - 7k</option>
-                    <option value="$ 8k - 12k">$ 8k - 12k</option>
-                    <option value="$ 12k - 18k">$ 12k - 18k</option>
-                    <option value="$ 18k - 24k">$ 18k - 24k</option>
-                    <option value="$ 24k - 32k">$ 24k - 32k</option>
+                    <option value="below 13">0 - 13</option>
+                    <option value="13-18">13 - 18</option>
+                    <option value="above 18">above 18</option>
                   </select>
                 </div>
                 <div>
@@ -348,26 +331,12 @@ const JobCard = ({ job }) => {
                 </div>
               </div>
             </div>
-            <div className="input-div mb-4">
-              <label htmlFor="location" className="text-lg font-medium">
-                Job location
-              </label>
-              <input
-                type="text"
-                autoComplete="off"
-                value={jobLocation}
-                onChange={(e) => handleDetails(e)}
-                required
-                id="jobLocation"
-                className="p-2 w-full font-normal border-[1px] text-lg rounded-md border-gray-200 focus:outline-secondary-300"
-              />
-            </div>
             <div className="input-div my-4">
               <label
                 htmlFor="job-title"
                 className="text-lg font-medium leading-[.1rem]"
               >
-                Job tags
+                Position tags
               </label>
               <FormControl className="w-full bg-white">
                 <Select
@@ -383,7 +352,7 @@ const JobCard = ({ job }) => {
                         <Chip
                           sx={{
                             color: "white",
-                            backgroundColor: "#f43f5e",
+                            backgroundColor: "#007fff",
                             fontWeight: "600",
                           }}
                           key={value}
@@ -404,7 +373,7 @@ const JobCard = ({ job }) => {
             </div>
             <div className="input-div mb-4">
               <label htmlFor="job-description" className="text-lg font-medium">
-                Job description
+                Position description
               </label>
               <textarea
                 id="jobDescription"

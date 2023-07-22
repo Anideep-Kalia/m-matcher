@@ -65,26 +65,12 @@ const JobDetails = ({ match }) => {
               </p>
             </div>
             <div className="text-center">
-              <h4 className="text-lg">Salary:</h4>
+              <h4 className="text-lg">Age:</h4>
               <p className="text-sm text-gray-600">
                 {job?.jobRequirements.salary}
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="py-4 px-8 bg-white border-[1px] shadow-sm border-gray-200 mb-7 rounded-md">
-          <h1 className="text-center text-2xl font-semibold mb-2">
-            More info:
-          </h1>
-          <p className="text-lg">
-            Your working location will be:{" "}
-            <span className="font-medium">{job?.jobLocation}</span>
-          </p>
-          <p className="text-lg">
-            Your job designation will be:{" "}
-            <span className="font-medium">{job?.jobDesignation}</span>
-          </p>
         </div>
 
         <div className="tags flex justify-evenly space-x-8 ">
