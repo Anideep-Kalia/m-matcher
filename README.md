@@ -1,4 +1,4 @@
-# m-matcher
+# M-matcher
 
 m-matcher is a platform where mentees can find mentors in their respective domains. It allows both mentors and mentees to register, and facilitates the matching process based on industry for mentees and qualification/skills for mentors.
 
