@@ -102,3 +102,9 @@ Contributions are what make the open-source community such an amazing place to l
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Anideep Kalia - https://twitter.com/AnideepKalia - anideepkalia@gmail.com
+
+Project Link: https://pleet-3555b.web.app/
